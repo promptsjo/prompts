@@ -1,0 +1,219 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Contact Us — Prompts | Post Production House / AI-Studio</title>
+  <meta name="description"
+    content="Get in touch with Prompts — your AI-driven post production partner in the GCC & Arab Region. Reach out for project inquiries, partnerships, and collaborations." />
+
+  <!-- Google Fonts -->
+  <link rel="preconnect" href="https://fonts.googleapis.com" />
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+  <link
+    href="https://fonts.googleapis.com/css2?family=Outfit:wght@400;600;700;800&family=Space+Mono:ital,wght@0,400;0,700;1,400&display=swap"
+    rel="stylesheet" />
+
+  <link rel="stylesheet" href="style.css" />
+</head>
+
+<body>
+
+  <!-- ═══════════════════════════════════════════
+       HEADER / NAVIGATION
+  ═══════════════════════════════════════════ -->
+  <header id="site-header">
+    <div class="header-inner">
+      <a href="index.html" class="logo" id="logo">Prompts<span class="orange-dot">.</span></a>
+
+      <button class="nav-toggle" id="nav-toggle" aria-label="Toggle navigation">
+        <span></span><span></span><span></span>
+      </button>
+
+      <nav class="main-nav" id="main-nav">
+        <ul>
+          <li><a href="index.html" class="nav-link" id="nav-home">Home</a></li>
+          <li><a href="about.html" class="nav-link" id="nav-about">About Us</a></li>
+          <li><a href="portfolio.html" class="nav-link" id="nav-portfolio">Portfolio</a></li>
+          <li><a href="prompts-repo.html" class="nav-link" id="nav-repository">Prompts Repo</a></li>
+          <li><a href="contact.html" class="nav-link nav-link--cta active" id="nav-contact">Contact Us</a></li>
+        </ul>
+      </nav>
+
+      <div class="nav-overlay" id="nav-overlay"></div>
+    </div>
+  </header>
+
+  <!-- ═══════════════════════════════════════════
+       PAGE HERO
+  ═══════════════════════════════════════════ -->
+  <section class="page-hero" id="contact-hero">
+    <div class="page-hero-inner">
+      <span class="section-label reveal-on-scroll">// Contact Us</span>
+      <h1 class="page-hero-title reveal-on-scroll">Let's build<br />something <em>extraordinary</em>.</h1>
+      <p class="page-hero-subtitle reveal-on-scroll">
+        Whether you're a filmmaker, a brand, or a studio — we'd love to hear about your project.<br />
+        Drop us a line and we'll get back to you within 24 hours.
+      </p>
+    </div>
+  </section>
+
+  <!-- ═══════════════════════════════════════════
+       CONTACT FORM + INFO
+  ═══════════════════════════════════════════ -->
+  <section class="content-section" id="contact-main">
+    <div class="content-inner content-inner--split content-inner--contact">
+
+      <!-- LEFT — Contact Form -->
+      <div class="contact-form-wrapper reveal-on-scroll">
+        <span class="section-label">// Send a Message</span>
+        <form class="contact-form" id="contact-form" action="#" method="POST">
+
+          <div class="form-group">
+            <label for="contact-name" class="form-label">Full Name</label>
+            <input type="text" id="contact-name" name="name" class="form-input" placeholder="Your full name" required />
+          </div>
+
+          <div class="form-group">
+            <label for="contact-email" class="form-label">Email Address</label>
+            <input type="email" id="contact-email" name="email" class="form-input" placeholder="you@company.com"
+              required />
+          </div>
+
+          <div class="form-group">
+            <label for="contact-subject" class="form-label">Subject</label>
+            <select id="contact-subject" name="subject" class="form-input form-select" required>
+              <option value="" disabled selected>Choose a topic</option>
+              <option value="project">New Project Inquiry</option>
+              <option value="partnership">Partnership / Collaboration</option>
+              <option value="careers">Careers</option>
+              <option value="general">General Question</option>
+            </select>
+          </div>
+
+          <div class="form-group">
+            <label for="contact-message" class="form-label">Message</label>
+            <textarea id="contact-message" name="message" class="form-input form-textarea" rows="6"
+              placeholder="Tell us about your project..." required></textarea>
+          </div>
+
+          <button type="submit" class="btn btn--primary btn--full" id="contact-submit">
+            Send Message
+          </button>
+        </form>
+
+        <!-- Success banner (hidden by default) -->
+        <div class="form-success" id="form-success">
+          <span class="form-success-icon">✓</span>
+          <p>Message sent successfully. We'll be in touch soon.</p>
+        </div>
+      </div>
+
+      <!-- RIGHT — Contact Info -->
+      <div class="contact-info reveal-on-scroll">
+        <span class="section-label">// Reach Us Directly</span>
+
+        <div class="info-card" id="info-email">
+          <div class="info-card-icon">✉</div>
+          <div>
+            <h3 class="info-card-title">Email</h3>
+            <p class="info-card-detail">hello@promptspost.com</p>
+          </div>
+        </div>
+
+        <div class="info-card" id="info-phone">
+          <div class="info-card-icon">☎</div>
+          <div>
+            <h3 class="info-card-title">Phone</h3>
+            <p class="info-card-detail">+971 4 123 4567</p>
+          </div>
+        </div>
+
+        <div class="info-card" id="info-location">
+          <div class="info-card-icon">⌖</div>
+          <div>
+            <h3 class="info-card-title">Location</h3>
+            <p class="info-card-detail">Dubai Media City, Building 7<br />Dubai, United Arab Emirates</p>
+          </div>
+        </div>
+
+        <div class="info-card" id="info-hours">
+          <div class="info-card-icon">◷</div>
+          <div>
+            <h3 class="info-card-title">Working Hours</h3>
+            <p class="info-card-detail">Sun – Thu: 9:00 AM – 6:00 PM<br />Fri – Sat: Closed</p>
+          </div>
+        </div>
+      </div>
+
+    </div>
+  </section>
+
+  <!-- ═══════════════════════════════════════════
+       FAQ
+  ═══════════════════════════════════════════ -->
+  <section class="content-section content-section--alt" id="faq-section">
+    <div class="content-inner">
+      <span class="section-label center reveal-on-scroll">// Frequently Asked</span>
+      <h2 class="section-title center reveal-on-scroll">Common questions.</h2>
+
+      <div class="faq-grid">
+
+        <div class="faq-item reveal-on-scroll" id="faq-01">
+          <h3 class="faq-question">What types of projects do you handle?</h3>
+          <p class="faq-answer">
+            We work across feature films, short films, documentaries, commercials, music videos,
+            and branded content — from single-episode edits to full series post-production.
+          </p>
+        </div>
+
+        <div class="faq-item reveal-on-scroll" id="faq-02">
+          <h3 class="faq-question">How does AI fit into your workflow?</h3>
+          <p class="faq-answer">
+            AI handles time-intensive tasks — automated scene detection, smart rotoscoping,
+            object removal, and dialogue enhancement — so our creatives can focus on the art.
+          </p>
+        </div>
+
+        <div class="faq-item reveal-on-scroll" id="faq-03">
+          <h3 class="faq-question">Do you work with international clients?</h3>
+          <p class="faq-answer">
+            Absolutely. While we're headquartered in Dubai, we serve clients globally with
+            cloud-based review platforms and real-time collaboration tools.
+          </p>
+        </div>
+
+        <div class="faq-item reveal-on-scroll" id="faq-04">
+          <h3 class="faq-question">What's the typical turnaround time?</h3>
+          <p class="faq-answer">
+            It depends on the scope. A branded commercial might take 5–7 business days;
+            a feature film could span 8–12 weeks. We always provide a detailed timeline upfront.
+          </p>
+        </div>
+
+      </div>
+    </div>
+  </section>
+
+  <!-- ═══════════════════════════════════════════
+       FOOTER
+  ═══════════════════════════════════════════ -->
+  <footer id="site-footer">
+    <div class="footer-inner">
+      <p class="footer-brand">Prompts<span class="orange-dot">.</span></p>
+      <p class="footer-copy">&copy; 2026 Prompts Post Production. All rights reserved.</p>
+      <div class="footer-links">
+        <a href="index.html">Home</a>
+        <a href="about.html">About</a>
+        <a href="portfolio.html">Portfolio</a>
+        <a href="prompts-repo.html">Repo</a>
+        <a href="contact.html">Contact</a>
+      </div>
+    </div>
+  </footer>
+
+  <script src="script.js"></script>
+</body>
+
+</html>
